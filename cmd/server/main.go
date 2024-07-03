@@ -1,9 +1,7 @@
 package main
 
-import "github.com/LeQuanHuyHoang/Go-Ecommerce/internal/router"
+import "github.com/LeQuanHuyHoang/Go-Ecommerce/internal/initialize"
 
 func main() {
-	r := router.NewRouter()
-
-	r.Run(":8080")
+	initialize.Run()
 }

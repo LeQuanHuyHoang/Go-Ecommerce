@@ -1,0 +1,21 @@
+server:
+  port: 8080
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: secret
+  dbname: shopdevgo
+  # Max number of idle connections in pool
+  maxIdleConns: 10
+  # Max number of connections
+  maxOpenConns: 100
+  # Max lifetime of connection
+  connMaxLifetime: 3600
+log:
+  logLevel: debug
+  fileLogName: "./storages/logs/dev.001.log"
+  maxSize: 500, # megabytes
+  maxBackups: 3
+  maxAge: 20,   # days
+  compress: true # disable by default
